@@ -11,7 +11,8 @@ variable "sg_name" {
 }
 
 variable "sg_description" {
-  type        = list
+  type        = string 
+  default = ""
 }
 
 variable "vpc_id" {
@@ -19,5 +20,6 @@ variable "vpc_id" {
 }
 
 variable "sg_tags" {
-    type = list
+    type = map 
+    default = {}
 }
